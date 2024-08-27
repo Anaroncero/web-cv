@@ -1,0 +1,52 @@
+{
+    "personal": {
+      "name": "Ana Pastor Roncero",
+      "location": {
+        "city": "Jaén",
+        "region": "España"
+      },
+      "contact": {
+        "phone": "+34 999 99 99 99",
+        "email": "correo"
+      }, 
+      "profile": {
+        "github": "https://github.com/Anaroncero",
+        "linkedin": "https://es.linkedin.com/in/ana-pastor-roncero"
+    },
+    "experiencia_profesional": [
+      {
+        "position": "Técnico Informático",
+        "company": "Junta de Andalucía",
+        "location": "Granada, España",
+        "dates": "Marzo 2021 - Junio 2021",
+        "responsibilities": [
+          "Trabajé con los repositorios y registros para la página web del Centro de Documentación de la Junta de Andalucía.",
+          "Montaje de equipos.",
+          "Instalación de sistemas operativos.",
+          "Configuración de direcciones IP."
+        ]
+      }
+    ],
+    "educacion": [
+      {
+        "degree": "Desarrollo de Aplicaciones Multiplataforma",
+        "institution": "MEDAC",
+        "location": "Granada, España",
+        "dates": "Septiembre 2022 - Actualidad"
+      },
+      {
+        "degree": "Bachillerato",
+        "institution": "IES REYES DE ESPAÑA",
+        "location": "Linares, España",
+        "dates": "Septiembre 2021 - Mayo 2023"
+      },
+      {
+        "degree": "Sistemas Microinformáticos y Redes",
+        "institution": "IES PADRE SUÁREZ",
+        "location": "Granada, España",
+        "dates": "Septiembre 2019 - Junio 2021"
+      }
+    ]
+  }
+  
+}

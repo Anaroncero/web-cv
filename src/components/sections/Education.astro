@@ -1,0 +1,60 @@
+---
+import Section from "../section.astro"
+import Title from "../title.astro"
+import { personal } from "@cv";
+const { educacion } = personal;
+---
+<Section>
+    <Title>EDUCACIÓN</Title>
+
+    {
+        educacion.map((educacion) => (
+        <article class="article">
+            <div class="container">
+              <div class="institution-degree">
+                <h3>{educacion.institution}</h3>
+                <h3><span>{educacion.degree}</span></h3>
+              </div>
+              <div class="location-dates">
+                <h3>{educacion.location}</h3>
+                <h3><span>{educacion.dates}</span></h3>
+              </div>
+            </div>
+          </article>
+        ))
+      }
+</Section>
+
+<style>
+    .article{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 10px;
+  }
+
+  .institution-degree{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    
+  }
+
+  .location-dates{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+  }
+
+
+  span{
+    font-weight: normal;
+    color: var(--Body-text);
+    font-style: italic;
+  }
+</style>

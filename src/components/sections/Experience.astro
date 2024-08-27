@@ -1,0 +1,75 @@
+---
+import Section from "../section.astro";
+import { personal } from "@cv";
+import Title from "../title.astro";
+import Article from "../article.astro";
+const { experiencia_profesional } = personal;
+---
+
+<Section>
+  <Title>EXPERIENCIA PROFESIONAL</Title>
+  {
+    experiencia_profesional.map((experiencia) => (
+      <article class="article">
+        <div class="container">
+          <div class="company-position">
+            <h3>{experiencia.company}</h3>
+            <h3><span>{experiencia.position}</span></h3>
+          </div>
+          <div class="location-dates">
+            <h3>{experiencia.location}</h3>
+            <h3><span>{experiencia.dates}</span></h3>
+          </div>
+        </div>
+        <ul>
+          {experiencia.responsibilities.map((responsibility) => (
+            <li>{responsibility}</li>
+          ))}
+        </ul>
+      </article>
+    ))
+  }
+</Section>
+
+<style>
+
+  .article{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 10px;
+  }
+
+  .company-position{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    
+  }
+
+  .location-dates{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+  }
+
+ 
+
+  span{
+    font-weight: normal;
+    color: var(--Body-text);
+    font-style: italic;
+  }
+
+  ul{
+    padding-left: 3rem;
+    color: var(--Body-text);
+  }
+
+
+</style>

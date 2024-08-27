@@ -1,0 +1,47 @@
+<article class="article">
+  <div class="container">
+    <div class="institution-degree">
+      <slot />
+    </div>
+    <div class="location-dates">
+      <slot />
+    </div>
+  </div>
+</article>
+
+<style>
+  .article {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 10px;
+  }
+
+  .company-position {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .location-dates {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+  }
+
+  span {
+    font-weight: normal;
+    color: var(--Body-text);
+    font-style: italic;
+  }
+
+  ul {
+    padding-left: 3rem;
+    color: var(--Body-text);
+  }
+</style>

@@ -1,0 +1,28 @@
+
+
+<h2 class="title">
+    <slot/>
+</h2>
+
+<style>
+
+.title {
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 0px;
+    margin-bottom: 15px; 
+    width: 100%; 
+  }
+    .title:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height:1px; 
+    width: 100%; 
+    background-color: var(--primary-color); 
+  }
+
+</style>
