@@ -1,17 +1,17 @@
 {
-    "personal": {
-      "name": "Ana Pastor Roncero",
-      "location": {
-        "city": "Jaén",
-        "region": "España"
-      },
-      "contact": {
-        "phone": "+34 999 99 99 99",
-        "email": "correo@gmail.com"
-      }, 
-      "profile": {
-        "github": "https://github.com/Anaroncero",
-        "linkedin": "https://es.linkedin.com/in/ana-pastor-roncero"
+  "personal": {
+    "name": "Ana Pastor Roncero",
+    "location": {
+      "city": "Jaén",
+      "region": "España"
+    },
+    "contact": {
+      "phone": "+34 999 99 99 99",
+      "email": "correo@gmail.com"
+    },
+    "profile": {
+      "github": "https://github.com/Anaroncero",
+      "linkedin": "https://es.linkedin.com/in/ana-pastor-roncero"
     },
     "experiencia_profesional": [
       {
@@ -46,7 +46,47 @@
         "location": "Granada, España",
         "dates": "Septiembre 2019 - Junio 2021"
       }
+    ],
+    "proyectos": [
+      {
+        "name": "practica-intermodular-1-DAM",
+        "isActive": false,
+        "description": "Practica intermodular 1DAM",
+        "stack": [
+          "Java"
+        ],
+        "url": "https://github.com/Anaroncero/practica-intermodular-1-DAM"
+      },
+      {
+        "name": "personal-web",
+        "isActive": true,
+        "description": "Mi primera pagina web personal",
+        "stack": [
+          "CSS",
+          "HTML",
+          "ASTRO"
+        ],
+        "url": "https://github.com/Anaroncero/personal-web"
+      },
+      {
+        "name": "SQL-Ejercicios-Apuntes",
+        "isActive": false,
+        "description": "Apuntes y ejercicios de SQL.",
+        "stack": [
+          "SQL"
+      ],
+        "url": "https://github.com/Anaroncero/SQL-Ejercicios-Apuntes"
+      },
+      {
+        "name": "web-cv",
+        "isActive": true,
+        "description": "Curriculum Web.",
+        "stack": [
+          "CSS",
+          "HTML"
+        ],
+        "url": "https://github.com/Anaroncero/web-cv"
+      }
     ]
   }
-  
 }

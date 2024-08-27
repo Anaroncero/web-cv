@@ -1,0 +1,125 @@
+---
+import Section from "../section.astro";
+import { personal } from "@cv";
+import Title from "../title.astro";
+import Article from "../article.astro";
+const { proyectos } = personal;
+---
+
+<Section>
+  <Title>PROYECTOS</Title>
+  <ul>
+    {proyectos.map((proyecto) => (
+      <li class="project-item">
+        <article>
+          <header>
+            <a href={proyecto.url} title={proyecto.name}>
+              <h3 class="text">{proyecto.name}</h3>
+              <svg
+                class="arrow"
+                xmlns="http://www.w3.org/2000/svg"
+                width="12"
+                height="12"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#ffffff"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M7 7h10v10" />
+                <path d="M7 17 17 7" />
+              </svg>
+            </a>
+          </header>
+          <footer>
+            <p>{proyecto.description}</p>
+            <div class="stack">
+              {proyecto.stack.map((tecnologia) => (
+                <span class="tech">{tecnologia}</span>
+              ))}
+            </div>
+          </footer>
+        </article>
+      </li>
+    ))}
+  </ul>
+</Section>
+
+<style>
+  a {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+  }
+
+  article {
+    border-radius: 8px;
+    border: 1px solid var(--border-item);
+    height: 100%;
+    padding: 1rem;
+    background-color: var(--background-item);
+    transition: background-color 0.3s ease;
+  }
+
+  
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+  }
+
+  footer p {
+    margin: 0;
+  }
+
+  .stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .tech {
+    border-radius: 6px;
+    background-color: var(--background-hover-item);
+    color: var(--Iconography);
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 0.2rem 0.6rem;
+    display: inline-flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+  }
+
+  .project-item {
+    transition: all 0.3s ease;
+  }
+
+  .text {
+    color: var(--primary-color);
+    transition: all 0.3s ease;
+  }
+
+  .arrow {
+    fill: none;
+    stroke: var(--primary-color);
+    transition: all 0.3s ease;
+  }
+
+  .project-item:hover .arrow {
+    stroke: rgb(208, 0, 255);
+    transform: translateX(2px) translateY(-1px);
+  }
+</style>

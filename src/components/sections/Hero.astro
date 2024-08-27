@@ -160,13 +160,6 @@ const { github, linkedin } = profile;
     font-size: 2.2rem;
   }
 
-  p {
-    color: var(--Body-text);
-    font-weight: 500;
-    font-size: 1rem;
-    text-wrap: balance;
-  }
-
   span {
     font-weight: bold;
     color: var(--primary-color);
@@ -184,11 +177,11 @@ const { github, linkedin } = profile;
     justify-content: space-between;
   }
 
-  .link {
+  .link {  
     color: var(--Iconography);
+    border: 1px solid var(--border-item);
     display: inline-flex;
     align-items: center;
-    border: 1px solid #eee;
     padding: 4px;
     height: 32px;
     border-radius: 6px;
@@ -199,8 +192,8 @@ const { github, linkedin } = profile;
   }
 
   .link:hover {
-    background-color: #eee;
-    border: 1px solid #ddd;
+    background-color: var(--background-hover-item);  
+    border: 1px solid var(--border-hover-item); 
   }
 
   .location-icon {
