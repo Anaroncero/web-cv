@@ -1,58 +1,50 @@
 ---
-import Section from "../section.astro"
-import Title from "../title.astro"
+import Section from "../section.astro";
+import Title from "../title.astro";
 import { personal } from "@cv";
+import Article from "../article.astro";
 const { educacion } = personal;
 ---
-<Section>
-    <Title>EDUCACIÓN</Title>
 
-    {
-        educacion.map((educacion) => (
-        <article class="article">
-            <div class="container">
-              <div class="institution-degree">
-                <h3>{educacion.institution}</h3>
-                <h3><span>{educacion.degree}</span></h3>
-              </div>
-              <div class="location-dates">
-                <h3>{educacion.location}</h3>
-                <h3><span>{educacion.dates}</span></h3>
-              </div>
-            </div>
-          </article>
-        ))
-      }
+<Section>
+  <Title>EDUCACIÓN</Title>
+
+  {
+    educacion.map((educacion) => (
+      <Article>
+        <span slot="title">
+          <h3>{educacion.institution}</h3>
+          <h2>{educacion.degree}</h2>
+        </span>
+        <span slot="dates">
+          <h3>{educacion.location}</h3>
+          <h2><span>{educacion.dates}</span></h2>
+        </span>
+      </Article>
+    ))
+  }
 </Section>
 
 <style>
-    .article{
-    display: flex;
-    flex-direction: column;
+  h3 {
+    color: var(--primary-color);
+    font-style: normal;
+    font-weight: bold;
   }
 
-  .container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-bottom: 10px;
+  h2 {
+    color: var(--primary-color);
+    font-style: normal;
+    font-weight: normal;
   }
 
-  .institution-degree{
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    
+  span,
+  h2 {
+    font-weight: normal;
+    color: var(--Body-text);
   }
 
-  .location-dates{
-    display: flex;
-    flex-direction: column;
-    text-align: right;
-  }
-
-
-  span{
+  span {
     font-weight: normal;
     color: var(--Body-text);
     font-style: italic;

@@ -9,11 +9,11 @@ const { github, linkedin } = profile;
 ---
 
 <Section>
-  <div class="info">
+  <header class="info">
     <h1>{name}</h1>
-  </div>
+  </header>
   <div class="container">
-    <div class="contact">
+    <aside class="contact">
       <span class="location">
         <svg
           class="location-icon"
@@ -33,7 +33,6 @@ const { github, linkedin } = profile;
         >
         {city}, {region}
       </span>
-
       <div>
         <a
           class="link"
@@ -130,12 +129,9 @@ const { github, linkedin } = profile;
           >
         </a>
       </div>
-    </div>
+    </aside>
     <figure>
-      <img
-        src="/me.webp"
-        alt={name}
-      />
+      <img src="/me.webp" alt={name} />
     </figure>
   </div>
 </Section>
@@ -182,13 +178,12 @@ const { github, linkedin } = profile;
     align-items: center;
   }
 
-  .container{
+  .container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
 
- 
   .link {
     color: var(--Iconography);
     display: inline-flex;
@@ -208,16 +203,16 @@ const { github, linkedin } = profile;
     border: 1px solid #ddd;
   }
 
-  .location-icon{
+  .location-icon {
     color: var(--Iconography);
     transition: all 0.3s ease;
   }
 
-  .location:hover{
-      .location-icon{
-        color: #ff0000;
-      }
+  .location:hover {
+    .location-icon {
+      color: #ff0000;
     }
+  }
 
   img {
     width: 104px;

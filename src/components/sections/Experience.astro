@@ -10,57 +10,45 @@ const { experiencia_profesional } = personal;
   <Title>EXPERIENCIA PROFESIONAL</Title>
   {
     experiencia_profesional.map((experiencia) => (
-      <article class="article">
-        <div class="container">
-          <div class="company-position">
-            <h3>{experiencia.company}</h3>
-            <h3><span>{experiencia.position}</span></h3>
-          </div>
-          <div class="location-dates">
-            <h3>{experiencia.location}</h3>
-            <h3><span>{experiencia.dates}</span></h3>
-          </div>
-        </div>
-        <ul>
+      <Article>
+        <span slot="title">
+          <h3>{experiencia.company}</h3>
+          <h2>{experiencia.position}</h2>
+        </span>
+        <span slot="dates">
+          <h3>{experiencia.location}</h3>
+          <h2><span>{experiencia.dates}</span></h2>
+        </span>
+      </Article>
+      <ul>
           {experiencia.responsibilities.map((responsibility) => (
             <li>{responsibility}</li>
           ))}
         </ul>
-      </article>
     ))
   }
 </Section>
 
 <style>
-
-  .article{
-    display: flex;
-    flex-direction: column;
+ h3 {
+    color: var(--primary-color);
+    font-style: normal;
+    font-weight: bold;
   }
 
-  .container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-bottom: 10px;
+  h2 {
+    color: var(--primary-color);
+    font-style: normal;
+    font-weight: normal;
   }
 
-  .company-position{
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    
+  span,
+  h2 {
+    font-weight: normal;
+    color: var(--Body-text);
   }
 
-  .location-dates{
-    display: flex;
-    flex-direction: column;
-    text-align: right;
-  }
-
- 
-
-  span{
+  span {
     font-weight: normal;
     color: var(--Body-text);
     font-style: italic;
@@ -70,6 +58,4 @@ const { experiencia_profesional } = personal;
     padding-left: 3rem;
     color: var(--Body-text);
   }
-
-
 </style>

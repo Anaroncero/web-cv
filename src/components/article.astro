@@ -1,15 +1,19 @@
 <article class="article">
   <div class="container">
-    <div class="institution-degree">
-      <slot />
+    <div class="title-details">
+      <slot name="title" />
     </div>
     <div class="location-dates">
-      <slot />
+      <slot name="dates" />
     </div>
   </div>
+  <ul>
+    <slot name="responsibilities" />
+  </ul>
 </article>
 
 <style>
+
   .article {
     display: flex;
     flex-direction: column;
@@ -22,7 +26,7 @@
     padding-bottom: 10px;
   }
 
-  .company-position {
+  .company-.dates {
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -32,16 +36,5 @@
     display: flex;
     flex-direction: column;
     text-align: right;
-  }
-
-  span {
-    font-weight: normal;
-    color: var(--Body-text);
-    font-style: italic;
-  }
-
-  ul {
-    padding-left: 3rem;
-    color: var(--Body-text);
   }
 </style>
