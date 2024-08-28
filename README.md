@@ -8,10 +8,7 @@ Basado en el diseño de <a href="https://github.com/BartoszJarocki/cv">Bartosz J
 =======
 <div align='center'>
   <img src='portada.png' alt='portada' />
-=======
-  <img src='portada.png' alt='portada.png' />
 </div>
-
 =======
 
 ## Herramientas
