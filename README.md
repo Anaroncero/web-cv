@@ -7,11 +7,9 @@ Basado en el diseño de <a href="https://github.com/BartoszJarocki/cv">Bartosz J
 
 =======
 <div align='center'>
-<<<<<<< HEAD
   <img src='portada.png' alt='portada' />
 =======
   <img src='portada.png' alt='portada.png' />
->>>>>>> 034fd13490c457fdeeeed3d2973ff61da211c20d
 </div>
 
 =======
