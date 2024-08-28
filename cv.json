@@ -49,14 +49,23 @@
     ],
     "proyectos": [
       {
-        "name": "practica-intermodular-1-DAM",
+        "name": "web-cv",
         "isActive": false,
-        "description": "Practica intermodular: Programacion, BBDD, Entornos de Desarrollo.",
+        "description": "Curriculum Web.",
         "stack": [
-          "Java",
-          "SQL"
+          "CSS",
+          "HTML"
         ],
-        "url": "https://github.com/Anaroncero/practica-intermodular-1-DAM"
+        "url": "https://github.com/Anaroncero/web-cv"
+      },
+      {
+        "name": "SQL-Ejercicios-Apuntes",
+        "isActive": false,
+        "description": "Apuntes y ejercicios de SQL.",
+        "stack": [
+          "SQL"
+      ],
+        "url": "https://github.com/Anaroncero/SQL-Ejercicios-Apuntes"
       },
       {
         "name": "personal-web",
@@ -70,23 +79,14 @@
         "url": "https://github.com/Anaroncero/personal-web"
       },
       {
-        "name": "SQL-Ejercicios-Apuntes",
+        "name": "practica-intermodular-1-DAM",
         "isActive": false,
-        "description": "Apuntes y ejercicios de SQL.",
+        "description": "Practica intermodular: Programacion, BBDD, Entornos de Desarrollo.",
         "stack": [
+          "Java",
           "SQL"
-      ],
-        "url": "https://github.com/Anaroncero/SQL-Ejercicios-Apuntes"
-      },
-      {
-        "name": "web-cv",
-        "isActive": false,
-        "description": "Curriculum Web.",
-        "stack": [
-          "CSS",
-          "HTML"
         ],
-        "url": "https://github.com/Anaroncero/web-cv"
+        "url": "https://github.com/Anaroncero/practica-intermodular-1-DAM"
       }
     ]
   }
