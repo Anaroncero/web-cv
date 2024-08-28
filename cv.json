@@ -51,7 +51,7 @@
       {
         "name": "practica-intermodular-1-DAM",
         "isActive": false,
-        "description": "Practica intermodular: Programacion, BBDD, Entornos de Desarrollo",
+        "description": "Practica intermodular: Programacion, BBDD, Entornos de Desarrollo.",
         "stack": [
           "Java",
           "SQL"
@@ -61,7 +61,7 @@
       {
         "name": "personal-web",
         "isActive": true,
-        "description": "Mi primera pagina web personal",
+        "description": "Mi primera pagina web personal.",
         "stack": [
           "CSS",
           "HTML",
