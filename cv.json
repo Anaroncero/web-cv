@@ -80,7 +80,7 @@
       },
       {
         "name": "web-cv",
-        "isActive": true,
+        "isActive": false,
         "description": "Curriculum Web.",
         "stack": [
           "CSS",
