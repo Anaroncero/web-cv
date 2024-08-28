@@ -14,6 +14,7 @@ Basado en el diseño de <a href="https://github.com/BartoszJarocki/cv">Bartosz J
 ## Herramientas
 
 - Lucide-Icons
+- uigradients
 
 ## 📃 License
 
