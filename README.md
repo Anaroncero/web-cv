@@ -7,7 +7,7 @@ Basado en el diseño de <a href="https://github.com/BartoszJarocki/cv">Bartosz J
 
 =======
 <div align='center'>
-  <img src='.png' alt='cv' />
+  <img src='.png' alt='portada.png' />
 </div>
 
 =======
