@@ -9,51 +9,52 @@ const { proyectos } = personal;
 <Section>
   <Title>PROYECTOS</Title>
   <ul>
-    {proyectos.map((proyecto) => (
-      <li class="project-item" title={proyecto.name}>
-        <article>
-          <header>
-            <h3>
+    {
+      proyectos.map((proyecto) => (
+        <li class="project-item" title={proyecto.name}>
+          <article>
+            <header>
+              <h3>
+                <a class="text" href={proyecto.url} title={proyecto.name}>
+                  {proyecto.name}
+                </a>
+                {proyecto.isActive && <span> •</span>}
+              </h3>
               <a href={proyecto.url} title={proyecto.name}>
-                {proyecto.name}
+                <svg
+                  class="arrow"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="12"
+                  height="12"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#ffffff"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M7 7h10v10" />
+                  <path d="M7 17 17 7" />
+                </svg>
               </a>
-              {proyecto.isActive && <span> •</span>}
-            </h3>
-            <a href={proyecto.url} title={proyecto.name}>
-              <svg
-                class="arrow"
-                xmlns="http://www.w3.org/2000/svg"
-                width="12"
-                height="12"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="#ffffff"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="M7 7h10v10" />
-                <path d="M7 17 17 7" />
-              </svg>
-            </a>
-          </header>
-          <footer>
-            <p>{proyecto.description}</p>
-            <div class="stack">
-              {proyecto.stack.map((tecnologia) => (
-                <span class="tech">{tecnologia}</span>
-              ))}
-            </div>
-          </footer>
-        </article>
-      </li>
-    ))}
+            </header>
+            <footer>
+              <p>{proyecto.description}</p>
+              <div class="stack">
+                {proyecto.stack.map((tecnologia) => (
+                  <span class="tech">{tecnologia}</span>
+                ))}
+              </div>
+            </footer>
+          </article>
+        </li>
+      ))
+    }
   </ul>
 </Section>
 
 <style>
-
-  header{
+  header {
     display: flex;
     flex-direction: row;
     gap: 8px;
@@ -84,7 +85,7 @@ const { proyectos } = personal;
     transition: background-color 0.3s ease;
   }
 
-  article h3 span{
+  article h3 span {
     color: rgb(55, 202, 92);
   }
 
@@ -99,14 +100,10 @@ const { proyectos } = personal;
     margin: 0;
   }
 
-  .text{
-    background: var(--background-item);
-    background: linear-gradient(to right, #bc4e9c,#f80759);
-    -webkit-text-fill-color: transparent; /* relleno de las letras transparente */
-    -webkit-background-clip: text; /* el fondo solo se extienda por el texto */
-    text-decoration: none;
+  .text {
+    color: var(--primary-color);
   }
- 
+
   .stack {
     display: flex;
     flex-wrap: wrap;
@@ -135,8 +132,46 @@ const { proyectos } = personal;
     transition: all 0.3s ease;
   }
 
+  .project-item:hover .text{
+    background: var(--background-item);
+    background: linear-gradient(to right, #bc4e9c, #f80759);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-decoration: none;
+  }
+
   .project-item:hover .arrow {
     stroke: rgb(208, 0, 255);
     transform: translateX(2px) translateY(-1px);
+  }
+
+  @media print {
+    .project-item .arrow {
+      display: none;
+    }
+
+    .project-item .isActive {
+      color: black;
+    }
+  }
+
+
+
+  @media (width <= 700px) {
+    ul {
+      margin-inline: 0px;
+    }
+
+    article {
+      border: none;
+      box-shadow: 0 1px 1px #f2f2f2;
+      padding: 0 0 16px 0;
+    }
+  }
+
+  @media print {
+    article h3 span {
+      animation-name: none;
+    }
   }
 </style>
