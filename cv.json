@@ -51,9 +51,10 @@
       {
         "name": "practica-intermodular-1-DAM",
         "isActive": false,
-        "description": "Practica intermodular 1DAM",
+        "description": "Practica intermodular: Programacion, BBDD, Entornos de Desarrollo",
         "stack": [
-          "Java"
+          "Java",
+          "SQL"
         ],
         "url": "https://github.com/Anaroncero/practica-intermodular-1-DAM"
       },

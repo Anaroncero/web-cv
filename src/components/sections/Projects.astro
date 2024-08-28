@@ -10,11 +10,16 @@ const { proyectos } = personal;
   <Title>PROYECTOS</Title>
   <ul>
     {proyectos.map((proyecto) => (
-      <li class="project-item">
+      <li class="project-item" title={proyecto.name}>
         <article>
           <header>
+            <h3>
+              <a href={proyecto.url} title={proyecto.name}>
+                {proyecto.name}
+              </a>
+              {proyecto.isActive && <span> •</span>}
+            </h3>
             <a href={proyecto.url} title={proyecto.name}>
-              <h3 class="text">{proyecto.name}</h3>
               <svg
                 class="arrow"
                 xmlns="http://www.w3.org/2000/svg"
@@ -47,12 +52,19 @@ const { proyectos } = personal;
 </Section>
 
 <style>
-  a {
+
+  header{
     display: flex;
     flex-direction: row;
     gap: 8px;
     align-items: center;
+  }
+  a {
+    gap: 8px;
+    align-items: center;
     text-decoration: none;
+
+    background-color: var(--background-item);
   }
 
   ul {
@@ -72,7 +84,9 @@ const { proyectos } = personal;
     transition: background-color 0.3s ease;
   }
 
-  
+  article h3 span{
+    color: rgb(55, 202, 92);
+  }
 
   footer {
     display: flex;
@@ -85,6 +99,14 @@ const { proyectos } = personal;
     margin: 0;
   }
 
+  .text{
+    background: var(--background-item);
+    background: linear-gradient(to right, #bc4e9c,#f80759);
+    -webkit-text-fill-color: transparent; /* relleno de las letras transparente */
+    -webkit-background-clip: text; /* el fondo solo se extienda por el texto */
+    text-decoration: none;
+  }
+ 
   .stack {
     display: flex;
     flex-wrap: wrap;
@@ -104,11 +126,6 @@ const { proyectos } = personal;
   }
 
   .project-item {
-    transition: all 0.3s ease;
-  }
-
-  .text {
-    color: var(--primary-color);
     transition: all 0.3s ease;
   }
 
