@@ -49,6 +49,16 @@
     ],
     "proyectos": [
       {
+        "name": "web-hermandad-legionarios-navarra",
+        "isActive": true,
+        "description": "Página web Hermandad Antiguos Legionarios de Navarra.",
+        "stack": [
+          "CSS",
+          "HTML"
+        ],
+        "url": "https://github.com/Anaroncero/web-cv"
+      },
+      {
         "name": "web-cv",
         "isActive": false,
         "description": "Curriculum Web.",
