@@ -69,6 +69,18 @@
         "url": "https://github.com/Anaroncero/web-cv"
       },
       {
+        "name": "2-DAM",
+        "isActive": true,
+        "description": "Apuntes, tareas, ejercicios y examenes 2º DAM.",
+        "stack": [
+          "ACCESO A DATOS",
+          "SERVICIOS Y PROCESOS",
+          "DESARROLLO INTERFACES",
+          "APLICACIONES MULTIMEDIA"
+        ],
+        "url": "https://github.com/Anaroncero/2-DAM"
+      },
+      {
         "name": "SQL-Ejercicios-Apuntes",
         "isActive": false,
         "description": "Apuntes y ejercicios de SQL.",
