@@ -1,4 +1,15 @@
 {
+  "businessCard": {
+    "name": "Ana Pastor Roncero",
+    "role": "Software Developer",
+    "phone": "640305170",
+    "email": "pastorronceroana@gmail.com"
+  }
+}
+
+
+
+{
   "personal": {
     "name": "Ana Pastor Roncero",
     "location": {
