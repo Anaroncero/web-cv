@@ -1,4 +1,19 @@
 {
+  "businessCard": {
+    "name": "Juan Pérez",
+    "role": "Java Developer",
+    "phone": "+123 456 7890",
+    "email": "juan.perez@example.com",
+    "website": "www.juanperez.dev"
+  }
+}
+
+
+
+
+
+
+{
   "personal": {
     "name": "Ana Pastor Roncero",
     "location": {
