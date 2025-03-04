@@ -22,7 +22,8 @@
         "responsibilities": [
           "Desarrollo app.",
           "Elección de tecnologías y lenguaje",
-          "Coordinación del equipo de desarrollo.",
+          "Coordinación del equipo de desarrollo."
+        ]
       },
       {
         "position": "Técnico Informático",
@@ -98,7 +99,7 @@
         "description": "Apuntes y ejercicios de SQL.",
         "stack": [
           "SQL"
-      ],
+        ],
         "url": "https://github.com/Anaroncero/SQL-Ejercicios-Apuntes"
       },
       {
