@@ -30,10 +30,7 @@ const { experiencia_profesional } = personal;
 </Section>
 
 <style>
-  .experience-item {
-    margin-bottom: 2rem; /* Añade separación entre experiencias */
-  }
-
+  /* Estilos generales de la sección */
   h3 {
     color: var(--primary-color);
     font-style: normal;
@@ -61,5 +58,16 @@ const { experiencia_profesional } = personal;
   ul {
     padding-left: 3rem;
     color: var(--Body-text);
+    margin: 0; /* Asegura que no haya margen extra */
+  }
+
+  /* Eliminar separación extra que pueda venir de Article */
+  article .container {
+    padding-bottom: 0; /* Remueve el padding adicional */
+  }
+
+  /* Si hay un margen en Article, elimínalo */
+  article {
+    margin-bottom: 0; /* Asegura que no haya margen extra entre artículos */
   }
 </style>
