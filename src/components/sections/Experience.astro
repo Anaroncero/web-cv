@@ -10,27 +10,33 @@ const { experiencia_profesional } = personal;
   <Title>EXPERIENCIA PROFESIONAL</Title>
   {
     experiencia_profesional.map((experiencia) => (
-      <Article>
-        <span slot="title">
-          <h3>{experiencia.company}</h3>
-          <h2>{experiencia.position}</h2>
-        </span>
-        <span slot="dates">
-          <h3>{experiencia.location}</h3>
-          <h2><span>{experiencia.dates}</span></h2>
-        </span>
-      </Article>
-      <ul>
+      <div class="experience-item"> 
+        <Article>
+          <span slot="title">
+            <h3>{experiencia.company}</h3>
+            <h2>{experiencia.position}</h2>
+          </span>
+          <span slot="dates">
+            <h3>{experiencia.location}</h3>
+            <h2><span>{experiencia.dates}</span></h2>
+          </span>
+        </Article>
+        <ul>
           {experiencia.responsibilities.map((responsibility) => (
             <li>{responsibility}</li>
           ))}
         </ul>
+      </div>
     ))
   }
 </Section>
 
 <style>
- h3 {
+  .experience-item {
+    margin-bottom: 2rem; /* Añade separación entre experiencias */
+  }
+
+  h3 {
     color: var(--primary-color);
     font-style: normal;
     font-weight: bold;
@@ -40,7 +46,6 @@ const { experiencia_profesional } = personal;
     color: var(--primary-color);
     font-style: normal;
     font-weight: normal;
-    
   }
 
   h2,
@@ -55,9 +60,8 @@ const { experiencia_profesional } = personal;
     font-style: italic;
   }
 
-  ul{
+  ul {
     padding-left: 3rem;
     color: var(--Body-text);
   }
-
 </style>
