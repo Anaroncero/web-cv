@@ -16,6 +16,18 @@
     },
     "experiencia_profesional": [
       {
+        "position": "Desarrollador principal y coordinador",
+        "company": "HelpApp",
+        "location": "Jaén, España",
+        "dates": "Febrero 2025 - Actualidad",
+        "responsibilities": [
+          "Desarrollo app.",
+          "Elección de tecnologías y lenguaje",
+          "Coordinación del equipo de desarrollo.",
+          
+        ]
+      },
+      {
         "position": "Técnico Informático",
         "company": "Junta de Andalucía",
         "location": "Granada, España",
