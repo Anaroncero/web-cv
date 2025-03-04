@@ -10,23 +10,21 @@ const { experiencia_profesional } = personal;
   <Title>EXPERIENCIA PROFESIONAL</Title>
   {
     experiencia_profesional.map((experiencia) => (
-      <div class="experience-item"> 
-        <Article>
-          <span slot="title">
-            <h3>{experiencia.company}</h3>
-            <h2>{experiencia.position}</h2>
-          </span>
-          <span slot="dates">
-            <h3>{experiencia.location}</h3>
-            <h2><span>{experiencia.dates}</span></h2>
-          </span>
-        </Article>
-        <ul>
+      <Article>
+        <span slot="title">
+          <h3>{experiencia.company}</h3>
+          <h2>{experiencia.position}</h2>
+        </span>
+        <span slot="dates">
+          <h3>{experiencia.location}</h3>
+          <h2><span>{experiencia.dates}</span></h2>
+        </span>
+        <ul slot="responsibilities">
           {experiencia.responsibilities.map((responsibility) => (
             <li>{responsibility}</li>
           ))}
         </ul>
-      </div>
+      </Article>
     ))
   }
 </Section>
