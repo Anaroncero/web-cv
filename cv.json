@@ -60,6 +60,26 @@
     ],
     "proyectos": [
       {
+        "name": "TFG",
+        "isActive": true,
+        "description": "TFG Grado Superior DAM.",
+        "stack": [
+          "JAVA",
+          "ANDROID STUDIO",
+          "SQL"
+        ],
+        "url": "https://github.com/Anaroncero/web-cv"
+        ] ,
+      {
+        "name": "HelpApp",
+        "isActive": true,
+        "description": "Aplicacion HelpApp.",
+        "stack": [
+          "APP",
+        ],
+        "url": "https://github.com/Anaroncero/web-cv"
+      },
+      {
         "name": "web-hermandad-legionarios-navarra",
         "isActive": true,
         "description": "Página web Hermandad Antiguos Legionarios de Navarra.",
@@ -78,50 +98,6 @@
           "HTML"
         ],
         "url": "https://github.com/Anaroncero/web-cv"
-      },
-      {
-        "name": "2-DAM",
-        "isActive": true,
-        "description": "Apuntes, tareas, ejercicios y examenes 2º DAM.",
-        "stack": [
-          "ACCESO A DATOS",
-          "SERVICIOS Y PROCESOS",
-          "DESARROLLO INTERFACES",
-          "APLICACIONES MULTIMEDIA",
-          "SISTEMAS GESTION EMPRESARIAL",
-          "INGLÉS"
-        ],
-        "url": "https://github.com/Anaroncero/2-DAM"
-      },
-      {
-        "name": "SQL-Ejercicios-Apuntes",
-        "isActive": false,
-        "description": "Apuntes y ejercicios de SQL.",
-        "stack": [
-          "SQL"
-        ],
-        "url": "https://github.com/Anaroncero/SQL-Ejercicios-Apuntes"
-      },
-      {
-        "name": "personal-web",
-        "isActive": true,
-        "description": "Mi primera pagina web personal.",
-        "stack": [
-          "CSS",
-          "HTML",
-          "ASTRO"
-        ],
-        "url": "https://github.com/Anaroncero/personal-web"
-      },
-      {
-        "name": "practica-intermodular-1-DAM",
-        "isActive": false,
-        "description": "Practica intermodular: Programacion, BBDD, Entornos de Desarrollo.",
-        "stack": [
-          "Java",
-          "SQL"
-        ],
-        "url": "https://github.com/Anaroncero/practica-intermodular-1-DAM"
       }
     ]
   }
