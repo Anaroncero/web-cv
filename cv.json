@@ -26,6 +26,15 @@
         ]
       },
       {
+        "position": "Desarrollador en prácticas",
+        "company": "Nter",
+        "location": "Jaén, España",
+        "dates": "Marzo 2025 - Actualidad",
+        "responsibilities": [
+          "Practicas.",
+        ]
+      },
+      {
         "position": "Técnico Informático",
         "company": "Junta de Andalucía",
         "location": "Granada, España",
@@ -69,7 +78,7 @@
           "SQL"
         ],
         "url": "https://github.com/Anaroncero/web-cv"
-        ] ,
+      } ,
       {
         "name": "HelpApp",
         "isActive": true,
