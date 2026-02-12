@@ -15,23 +15,29 @@
     },
     "experiencia_profesional": [
       {
-        "position": "Desarrollador principal y coordinador",
-        "company": "HelpApp",
-        "location": "Jaén, España",
-        "dates": "Febrero 2025 - Actualidad",
-        "responsibilities": [
-          "Desarrollo app.",
-          "Elección de tecnologías y lenguaje",
-          "Coordinación del equipo de desarrollo."
-        ]
-      },
-      {
-        "position": "Desarrollador en prácticas",
+        "position": "Desarrollador Backend Java",
         "company": "Nter",
         "location": "Jaén, España",
-        "dates": "Marzo 2025 - Actualidad",
+        "dates": "Octubre 2025 - Actualidad",
         "responsibilities": [
-          "Practicas."
+          "Proyecto de integración de servicios (Middleware) para BBVA Brasil.",
+          "Desarrollo de servicio demonio encargado de procesar flujos de mensajería y aplicar reglas de negocio.",
+          "Conexión con APIs internas mediante middellibrary corporativa.",
+          "Análisis y elaboración del Documento Técnico (DT) definiendo arquitectura, secuencia de flujo y modelo de datos.",
+          "Configuración y desarrollo del workflow del demonio utilizando InputAdapters, Routers y Enrichers.",
+          "Implementación de persistencia dinámica en MongoDB (colecciones Workflow, Component y FieldData).",
+          "Aplicación de patrones de Spring Integration (channels, handlers y enrutamiento).",
+          "Configuración y pruebas end-to-end con ActiveMQ y MongoDB en entorno local.",
+          "Desarrollo con Spring Boot y Spring Framework.",
+          "Implementación de controladores REST y lógica empresarial.",
+          "Validaciones con DTOs (@NotNull, @Size, @Email) y manejo centralizado de excepciones con @ControllerAdvice.",
+          "Seguridad con Spring Security y JWT (control de acceso por roles y filtros OncePerRequestFilter).",
+          "Testing con JUnit 5 y Mockito.",
+          "Análisis de calidad con SonarQube vía Docker.",
+          "Dockerización de aplicaciones y uso de docker-compose.",
+          "Arquitectura de microservicios con Spring Cloud, Eureka y API Gateway.",
+          "Comunicación entre servicios con FeignClient y RestTemplate.",
+          "Implementación básica de Kafka (KafkaTemplate y @KafkaListener)."
         ]
       },
       {
@@ -40,10 +46,11 @@
         "location": "Granada, España",
         "dates": "Marzo 2021 - Junio 2021",
         "responsibilities": [
-          "Trabajé con los repositorios y registros para la página web del Centro de Documentación de la Junta de Andalucía.",
-          "Montaje de equipos.",
-          "Instalación de sistemas operativos.",
-          "Configuración de direcciones IP."
+          "Soporte técnico y resolución de incidencias.",
+          "Montaje y configuración de hardware.",
+          "Instalación y administración básica de sistemas Linux y Windows Server.",
+          "Configuración de redes y direcciones IP.",
+          "Acceso remoto mediante SSH."
         ]
       }
     ],
@@ -67,44 +74,29 @@
         "dates": "Septiembre 2019 - Junio 2021"
       }
     ],
+    "certificaciones": [
+      {
+        "name": "ASO",
+        "issuer": "BBVA España"
+      },
+      {
+        "name": "APX",
+        "issuer": "BBVA España"
+      },
+      {
+        "name": "LRBA",
+        "issuer": "BBVA España"
+      }
+    ],
     "proyectos": [
       {
-        "name": "TFG",
+        "name": "Coorbera – Aplicación Android para Gestión Comunitaria",
         "isActive": true,
-        "description": "TFG Grado Superior DAM.",
+        "description": "Desarrollo completo de aplicación Android en Java con Android Studio, implementación de persistencia SQL y programación orientada a objetos.",
         "stack": [
-          "JAVA",
-          "ANDROID STUDIO",
+          "Java",
+          "Android Studio",
           "SQL"
-        ],
-        "url": "https://github.com/Anaroncero/web-cv"
-      } ,
-      {
-        "name": "HelpApp",
-        "isActive": true,
-        "description": "Aplicacion HelpApp.",
-        "stack": [
-          "APP",
-        ],
-        "url": "https://github.com/Anaroncero/web-cv"
-      },
-      {
-        "name": "web-hermandad-legionarios-navarra",
-        "isActive": true,
-        "description": "Página web Hermandad Antiguos Legionarios de Navarra.",
-        "stack": [
-          "CSS",
-          "HTML"
-        ],
-        "url": "https://github.com/Anaroncero/web-cv"
-      },
-      {
-        "name": "web-cv",
-        "isActive": false,
-        "description": "Curriculum Web.",
-        "stack": [
-          "CSS",
-          "HTML"
         ],
         "url": "https://github.com/Anaroncero/web-cv"
       }
