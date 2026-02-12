@@ -26,18 +26,17 @@
           "Análisis y elaboración del Documento Técnico (DT) definiendo arquitectura, secuencia de flujo y modelo de datos.",
           "Desarrollo y configuración del workflow del demonio (InputAdapters, Routers, Enrichers).",
           "Persistencia dinámica en MongoDB (colecciones Workflow, Component y FieldData).",
-          "Aplicación de patrones de Spring Integration (channels, handlers, enrutamiento).",
+          "Aplicación de patrones de Spring Integration (channels, handlers y enrutamiento).",
           "Pruebas end-to-end con ActiveMQ y MongoDB en entorno local."
         ],
-        "": [
-          "Spring Boot.",
-          "Java.",
+        "responsibilities": [
+          "Desarrollo con Spring Boot y Spring Framework.",
+          "Implementación de controladores RESTful y lógica empresarial.",
           "Gestión de perfiles y configuración con application.yml.",
           "Inyección de dependencias y uso de @PostConstruct y CommandLineRunner.",
           "Validaciones con DTOs (@NotNull, @Size, @Email).",
           "Gestión centralizada de errores con @ControllerAdvice.",
-          "Spring Data JPA",
-          "MongoDB.",
+          "Persistencia con Spring Data JPA y MongoDB.",
           "Relaciones @OneToOne, @ManyToOne, @ManyToMany y mapeo con MapStruct.",
           "Paginación y búsquedas dinámicas con CriteriaBuilder.",
           "Seguridad con Spring Security y JWT (roles y filtros OncePerRequestFilter).",
@@ -125,7 +124,7 @@
       },
       {
         "name": "web-cv",
-        "isActive": false,
+        "isActive": true,
         "description": "Curriculum web personal.",
         "stack": ["HTML", "CSS"],
         "url": "https://github.com/Anaroncero/web-cv"
