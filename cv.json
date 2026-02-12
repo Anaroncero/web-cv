@@ -19,25 +19,38 @@
         "company": "Nter",
         "location": "Jaén, España",
         "dates": "Octubre 2025 - Actualidad",
-        "responsibilities": [
+        "proyecto_BBVA": [
           "Proyecto de integración de servicios (Middleware) para BBVA Brasil.",
           "Desarrollo de servicio demonio encargado de procesar flujos de mensajería y aplicar reglas de negocio.",
-          "Conexión con APIs internas mediante middellibrary corporativa.",
+          "Conexión con APIs internas utilizando middellibrary corporativa.",
           "Análisis y elaboración del Documento Técnico (DT) definiendo arquitectura, secuencia de flujo y modelo de datos.",
-          "Configuración y desarrollo del workflow del demonio utilizando InputAdapters, Routers y Enrichers.",
-          "Implementación de persistencia dinámica en MongoDB (colecciones Workflow, Component y FieldData).",
-          "Aplicación de patrones de Spring Integration (channels, handlers y enrutamiento).",
-          "Configuración y pruebas end-to-end con ActiveMQ y MongoDB en entorno local.",
-          "Desarrollo con Spring Boot y Spring Framework.",
-          "Implementación de controladores REST y lógica empresarial.",
-          "Validaciones con DTOs (@NotNull, @Size, @Email) y manejo centralizado de excepciones con @ControllerAdvice.",
-          "Seguridad con Spring Security y JWT (control de acceso por roles y filtros OncePerRequestFilter).",
+          "Desarrollo y configuración del workflow del demonio (InputAdapters, Routers, Enrichers).",
+          "Persistencia dinámica en MongoDB (colecciones Workflow, Component y FieldData).",
+          "Aplicación de patrones de Spring Integration (channels, handlers, enrutamiento).",
+          "Pruebas end-to-end con ActiveMQ y MongoDB en entorno local."
+        ],
+        "": [
+          "Spring Boot.",
+          "Java.",
+          "Gestión de perfiles y configuración con application.yml.",
+          "Inyección de dependencias y uso de @PostConstruct y CommandLineRunner.",
+          "Validaciones con DTOs (@NotNull, @Size, @Email).",
+          "Gestión centralizada de errores con @ControllerAdvice.",
+          "Spring Data JPA",
+          "MongoDB.",
+          "Relaciones @OneToOne, @ManyToOne, @ManyToMany y mapeo con MapStruct.",
+          "Paginación y búsquedas dinámicas con CriteriaBuilder.",
+          "Seguridad con Spring Security y JWT (roles y filtros OncePerRequestFilter).",
           "Testing con JUnit 5 y Mockito.",
-          "Análisis de calidad con SonarQube vía Docker.",
+          "Análisis de calidad con SonarQube.",
           "Dockerización de aplicaciones y uso de docker-compose.",
-          "Arquitectura de microservicios con Spring Cloud, Eureka y API Gateway.",
+          "Arquitectura de microservicios con Spring Cloud.",
           "Comunicación entre servicios con FeignClient y RestTemplate.",
-          "Implementación básica de Kafka (KafkaTemplate y @KafkaListener)."
+          "Registro y descubrimiento de servicios con Eureka Server.",
+          "API Gateway en arquitectura distribuida.",
+          "Configuración de productor y consumidor con KafkaTemplate y @KafkaListener.",
+          "Serialización JSON y procesamiento asíncrono de eventos.",
+          "Control de versiones con Git y GitHub."
         ]
       },
       {
@@ -48,7 +61,7 @@
         "responsibilities": [
           "Soporte técnico y resolución de incidencias.",
           "Montaje y configuración de hardware.",
-          "Instalación y administración básica de sistemas Linux y Windows Server.",
+          "Instalación y administración básica de Linux y Windows Server.",
           "Configuración de redes y direcciones IP.",
           "Acceso remoto mediante SSH."
         ]
@@ -93,11 +106,28 @@
         "name": "Coorbera – Aplicación Android para Gestión Comunitaria",
         "isActive": true,
         "description": "Desarrollo completo de aplicación Android en Java con Android Studio, implementación de persistencia SQL y programación orientada a objetos.",
-        "stack": [
-          "Java",
-          "Android Studio",
-          "SQL"
-        ],
+        "stack": ["Java", "Android Studio", "SQL"],
+        "url": "https://github.com/Anaroncero/web-cv"
+      },
+      {
+        "name": "HelpApp",
+        "isActive": true,
+        "description": "Desarrollo y coordinación técnica de aplicación colaborativa.",
+        "stack": ["Java", "Spring", "Git"],
+        "url": "https://github.com/Anaroncero/web-cv"
+      },
+      {
+        "name": "web-hermandad-legionarios-navarra",
+        "isActive": true,
+        "description": "Desarrollo web estático.",
+        "stack": ["HTML", "CSS"],
+        "url": "https://github.com/Anaroncero/web-cv"
+      },
+      {
+        "name": "web-cv",
+        "isActive": false,
+        "description": "Curriculum web personal.",
+        "stack": ["HTML", "CSS"],
         "url": "https://github.com/Anaroncero/web-cv"
       }
     ]
